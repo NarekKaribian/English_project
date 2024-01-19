@@ -184,9 +184,6 @@ function translationGenerator(
   setTimeout(() => {
     _button.classList.remove("green", "red");
   }, 400);
-  setTimeout(() => {
-    _translation.innerHTML = "";
-  }, 2000);
 
   correctIndex = (correctIndex + 1) % _words.length;
 
