@@ -1,99 +1,149 @@
+// words array---------------------------
 let words;
 let correctIndex = 0;
-if (document.title === "Words 1-50") {
-  words = [
-    { original: "primary", translation: "начальный" },
-    { original: "hidden", translation: "скрытый" },
-    { original: "align", translation: "выровнять" },
-    { original: "tab bar", translation: "панель вкладок" },
-    { original: "actions", translation: "действия" },
-    { original: "sticky", translation: "липкий" },
-    { original: "scroll", translation: "прокрутка" },
-    { original: "characters", translation: "персонажи" },
-    { original: "zoom", translation: "масштабировать" },
-    { original: "decrease", translation: "уменьшить" },
-    { original: "reset", translation: "перезагрузить" },
-    { original: "justify", translation: "оправдывать" },
-    { original: "single", translation: "одинокий" },
-    { original: "title", translation: "заголовок" },
-    { original: "split", translation: "расколоть" },
-    { original: "rows", translation: "ряды" },
-    { original: "flip", translation: "подбросить" },
-    { original: "shortcuts", translation: "ярлыки" },
-    { original: "snippets", translation: "фрагменты" },
-    { original: "configure", translation: "настроить" },
-    { original: "tasks", translation: "задания" },
-    { original: "sync", translation: "синхронизировать" },
-    { original: "abbreviation", translation: "Сокращенное название" },
-    { original: "select", translation: "выбирать" },
-    { original: "shrink", translation: "сокращать" },
-    { original: "move", translation: "двигаться" },
-    { original: "above", translation: "выше" },
-    { original: "below", translation: "ниже" },
-    { original: "occurrence", translation: "вхождение" },
-    { original: "previous", translation: "предыдущий" },
-    { original: "switch", translation: "выключатель" },
-    { original: "column", translation: "столбец" },
-    { original: "mode", translation: "режим" },
-    { original: "appearance", translation: "появление" },
-    { original: "layout", translation: "макет" },
-    { original: "side", translation: "сторона" },
-  ];
-} else if (document.title === "Words 51-100") {
-  words = [
-    { original: "edit", translation: "редактировать" },
-    { original: "undo", translation: "отменить" },
-    { original: "redo", translation: "переделывать" },
-    { original: "paste", translation: "вставить" },
-    { original: "find", translation: "изыскать" },
-    { original: "replace", translation: "заменять" },
-    { original: "toggle", translation: "переключать" },
-    { original: "emment", translation: "наполнять" },
-    { original: "recent", translation: "недавний" },
-    { original: "share", translation: "делиться" },
-    { original: "preferences", translation: "предпочтения" },
-    { original: "revert", translation: "возвращаться" },
-    { original: "boot", translation: "загружать" },
-    { original: "create", translation: "создать" },
-    { original: "cut", translation: "вырезать" },
-    { original: "backup", translation: "резервное копирование" },
-    { original: "issue", translation: "проблема" },
-    { original: "pull requests", translation: "запросы на извлечение" },
-    { original: "explore", translation: "исследовать" },
-    { original: "assigned", translation: "назначенный" },
-    { original: "mentione", translation: "упомянуть" },
-    { original: "dashboard", translation: "панель приборов" },
-    { original: "upgrade", translation: "обновление" },
-    { original: "matched", translation: "соответствует" },
-    { original: "visibility", translation: "видимость" },
-    { original: "develop", translation: "разрабатовать" },
-    { original: "compile", translation: "компилировать" },
-    { original: "verify", translation: "проверить" },
-    { original: "enable", translation: "активировать" },
-    { original: "install", translation: "устанавливать" },
-    { original: "load", translation: "загружать" },
-    { original: "expansion", translation: "расширение" },
-    { original: "hyperlink", translation: "ссылка" },
-    { original: "bookmark", translation: "закладка" },
-    { original: "cloud storage", translation: "облачное хранилище" },
-    { original: "latency", translation: "задержка" },
-    { original: "reboot", translation: "перезагрузка" },
-    { original: "to update", translation: "обновить" },
-    { original: "to display", translation: "отображать" },
-    { original: "to eject", translation: "извлекать" },
-    { original: "restore", translation: "восстанавливать" },
-    { original: "query", translation: "запрос" },
-    { original: "firmware", translation: "прошивка" },
-    { original: "keyboard", translation: "клавиатура" },
-    { original: "device", translation: "устройство" },
-    { original: "hard disk drive", translation: "жесткий диск" },
-    { original: "power supply unit", translation: "блок питания" },
-    { original: "storage device", translation: "накопитель" },
-    { original: "touch screen", translation: "сенсорный экран" },
-    { original: "allow", translation: "разрешить" },
-  ];
+{
+  if (document.title === "Words 01-20") {
+    words = [
+      { original: "References", translation: "Рекомендации" },
+      { original: "Bracket", translation: "Скобка" },
+      { original: "Change", translation: "Изменять" },
+      { original: "Debugging", translation: "Отладка" },
+      { original: "Without", translation: "Без" },
+      { original: "Launch", translation: "Запуск" },
+      { original: "Without", translation: "Без" },
+      { original: "Step", translation: "Шаг" },
+      { original: "Continue", translation: "Продолжать" },
+      { original: "Step over", translation: "Переступить" },
+      { original: "Breakpoint", translation: "Точка останова" },
+      { original: "Inline", translation: "В соответствии" },
+      { original: "Disable", translation: "Запрещать" },
+      { original: "itional", translation: "Дополнительный" },
+      { original: "Run", translation: "Запустить" },
+      { original: "Build", translation: "Сборка" },
+      { original: "Running", translation: "Текущиая" },
+      { original: "Terminate", translation: "Прекратить" },
+      { original: "Release", translation: "Выпускать" },
+      { original: "Notes", translation: "Примечания" },
+    ];
+  } else if (document.title === "Words 20-40") {
+    words = [
+      { original: "Single", translation: "Одинокий" },
+      { original: "Title", translation: "Заголовок" },
+      { original: "Split", translation: "Расколоть" },
+      { original: "Rows", translation: "Ряды" },
+      { original: "Flip", translation: "Подбросить" },
+      { original: "Shortcuts", translation: "Ярлыки" },
+      { original: "Snippets", translation: "Фрагменты" },
+      { original: "Configure", translation: "Настроить" },
+      { original: "Tasks", translation: "Задания" },
+      { original: "Sync", translation: "Синхронизировать" },
+      { original: "Abbreviation", translation: "Сокращенное название" },
+      { original: "Select", translation: "Выбирать" },
+      { original: "Shrink", translation: "Сокращать" },
+      { original: "Move", translation: "Двигаться" },
+      { original: "Above", translation: "Выше" },
+      { original: "Below", translation: "Ниже" },
+      { original: "Occurrence", translation: "Вхождение" },
+      { original: "Previous", translation: "Предыдущий" },
+      { original: "Share", translation: "Делиться" },
+      { original: "Find", translation: "Изыскать" },
+    ];
+  } else if (document.title === "Words 40-60") {
+    words = [
+      { original: "Back", translation: "Назад" },
+      { original: "Forward", translation: "Вперед" },
+      { original: "Last", translation: "Последний" },
+      { original: "Next", translation: "Следующий" },
+      { original: "Page", translation: "Страница" },
+      { original: "Use", translation: "Использовать" },
+      { original: "Definition", translation: "Определение" },
+      { original: "Implementation", translation: "Реализация" },
+      { original: "Primary", translation: "Начальный" },
+      { original: "Hidden", translation: "Скрытый" },
+      { original: "Align", translation: "Выровнять" },
+      { original: "Tab bar", translation: "Панель вкладок" },
+      { original: "Actions", translation: "Действия" },
+      { original: "Sticky", translation: "Липкий" },
+      { original: "Scroll", translation: "Прокрутка" },
+      { original: "Characters", translation: "Персонажи" },
+      { original: "Zoom", translation: "Масштабировать" },
+      { original: "Decrease", translation: "Уменьшить" },
+      { original: "Reset", translation: "Перезагрузить" },
+      { original: "Justify", translation: "Оправдывать" },
+    ];
+  } else if (document.title === "Words 60-80") {
+    words = [
+      { original: "Edit", translation: "Редактировать" },
+      { original: "Undo", translation: "Отменить" },
+      { original: "Redo", translation: "Переделывать" },
+      { original: "Paste", translation: "Вставить" },
+      { original: "Replace", translation: "Заменять" },
+      { original: "Toggle", translation: "Переключать" },
+      { original: "Emment", translation: "Наполнять" },
+      { original: "Recent", translation: "Недавний" },
+      { original: "Preferences", translation: "Предпочтения" },
+      { original: "Revert", translation: "Возвращаться" },
+      { original: "Boot", translation: "Загружать" },
+      { original: "Create", translation: "Создать" },
+      { original: "Cut", translation: "Вырезать" },
+      { original: "Backup", translation: "Резервное копирование" },
+      { original: "Issue", translation: "Проблема" },
+      { original: "Pull requests", translation: "Запросы на извлечение" },
+      { original: "Explore", translation: "Исследовать" },
+      { original: "Assigned", translation: "Назначенный" },
+      { original: "Mentione", translation: "Упомянуть" },
+      { original: "Dashboard", translation: "Панель приборов" },
+    ];
+  } else if (document.title === "Words 80-100") {
+    words = [
+      { original: "Upgrade", translation: "Обновление" },
+      { original: "Matched", translation: "Соответствует" },
+      { original: "Visibility", translation: "Видимость" },
+      { original: "Develop", translation: "Разрабатовать" },
+      { original: "Compile", translation: "Компилировать" },
+      { original: "Verify", translation: "Проверить" },
+      { original: "Enable", translation: "Активировать" },
+      { original: "Install", translation: "Устанавливать" },
+      { original: "Load", translation: "Загружать" },
+      { original: "Expansion", translation: "Расширение" },
+      { original: "Hyperlink", translation: "Ссылка" },
+      { original: "Bookmark", translation: "Закладка" },
+      { original: "Cloud storage", translation: "Облачное хранилище" },
+      { original: "Latency", translation: "Задержка" },
+      { original: "Reboot", translation: "Перезагрузка" },
+      { original: "To update", translation: "Обновить" },
+      { original: "To display", translation: "Отображать" },
+      { original: "To eject", translation: "Извлекать" },
+      { original: "Restore", translation: "Восстанавливать" },
+      { original: "Query", translation: "Запрос" },
+    ];
+  } else if (document.title === "Words 100-120") {
+    words = [
+      { original: "Switch", translation: "Выключатель" },
+      { original: "Column", translation: "Столбец" },
+      { original: "Mode", translation: "Режим" },
+      { original: "Appearance", translation: "Появление" },
+      { original: "Layout", translation: "Макет" },
+      { original: "Side", translation: "Сторона" },
+      { original: "Edit", translation: "Редактировать" },
+      { original: "Undo", translation: "Отменить" },
+      { original: "Redo", translation: "Переделывать" },
+      { original: "Paste", translation: "Вставить" },
+      { original: "Find", translation: "Изыскать" },
+      { original: "Replace", translation: "Заменять" },
+      { original: "Firmware", translation: "Прошивка" },
+      { original: "Keyboard", translation: "Клавиатура" },
+      { original: "Device", translation: "Устройство" },
+      { original: "Hard disk drive", translation: "Жесткий диск" },
+      { original: "Power supply unit", translation: "Блок питания" },
+      { original: "Storage device", translation: "Накопитель" },
+      { original: "Touch screen", translation: "Сенсорный экран" },
+      { original: "Allow", translation: "Разрешить" },
+    ];
+  }
 }
 
+// functions------------------------------------
 function burgerClick(_burgerIcon, _burgerNav) {
   _burgerIcon.addEventListener("click", function () {
     this.classList.toggle("active");
@@ -110,17 +160,17 @@ function translationGenerator(
   _startHeader,
   _translation
 ) {
-  if (_input.value.trim() === "") {
-    _startHeader.classList.add("red_text");
-    setTimeout(() => {
-      _startHeader.classList.remove("red_text");
-    }, 1000);
-    return;
-  }
-
   let currentWord = getNextWord(words);
   let userTranslation = _input.value.toLowerCase().trim();
   let correctTranslation = currentWord.translation.toLowerCase().trim();
+
+  if (_input.value.trim() === "") {
+    _userAnswer.classList.add("red_text");
+    setTimeout(() => {
+      _userAnswer.classList.remove("red_text");
+    }, 600);
+    return;
+  }
 
   if (userTranslation === correctTranslation) {
     _translation.innerHTML = `${currentWord.original} - <span class="green_text"> ${currentWord.translation} </span>`;
@@ -133,34 +183,36 @@ function translationGenerator(
   }
   setTimeout(() => {
     _button.classList.remove("green", "red");
-  }, 1000);
+  }, 400);
+  setTimeout(() => {
+    _translation.innerHTML = "";
+  }, 2000);
 
   correctIndex = (correctIndex + 1) % _words.length;
 
   _userAnswer.textContent = getNextWord(words).original;
   _countAnswers.innerHTML = `
-        <p>${correctAnswersText}: <span class="green_text">${correctAnswers}</span></p>
-        <p>${inCorrectAnswersText}: <span class="red_text">${inCorrectAnswers}</span></p>
-      `;
+          <p>${correctAnswersText}: <span class="green_text">${correctAnswers}</span></p>
+          <p>${inCorrectAnswersText}: <span class="red_text">${inCorrectAnswers}</span></p>
+        `;
   _input.value = "";
 }
-
-let correctAnswers = 0;
-let correctAnswersText = "Правильные ответы";
-let inCorrectAnswers = 0;
-let inCorrectAnswersText = "Неправильные ответы";
 
 function getNextWord(_words) {
   return _words[correctIndex];
 }
+
+// lets, consts----------------------------------------
+let correctAnswers = 0;
+let correctAnswersText = "Правильные ответы";
+let inCorrectAnswers = 0;
+let inCorrectAnswersText = "Неправильные ответы";
 
 // Для header.html и woeds.html
 const headerContainer = document.querySelector(".header_container");
 const headerLogo = document.querySelector(".header_logo");
 const burgerNav = document.querySelector(".burger_nav");
 const burgerIcon = document.querySelector(".burger_icon");
-
-burgerClick(burgerIcon, burgerNav);
 
 // Для words1.2.3.4....html
 const containerMain = document.querySelector(".container_main");
@@ -171,6 +223,15 @@ const button = document.querySelector(".button");
 const translation = document.querySelector(".translation");
 const countAnswers = document.querySelector(".count_answers");
 
+burgerClick(burgerIcon, burgerNav);
+
+countAnswers.innerHTML = `
+<p>${correctAnswersText}: <span class="green_text">${correctAnswers}</span></p>
+<p>${inCorrectAnswersText}: <span class="red_text">${inCorrectAnswers}</span></p>
+`;
+userAnswer.textContent = getNextWord(words).original;
+
+// button, Enter-------------------------------------------
 button.addEventListener("click", () => {
   translationGenerator(
     words,
@@ -182,9 +243,6 @@ button.addEventListener("click", () => {
     translation
   );
 });
-// ----------------------------------------------------
-
-userAnswer.textContent = getNextWord(words).original;
 
 input.addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
