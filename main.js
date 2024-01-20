@@ -5,7 +5,6 @@ let correctAnswers = 0;
 let correctAnswersText = "Правильные ответы";
 let inCorrectAnswers = 0;
 let inCorrectAnswersText = "Неправильные ответы";
-let totalWords = 0;
 
 // words array---------------------------
 {
@@ -164,7 +163,6 @@ function translationGenerator(
   _countAnswers,
   _input,
   _button,
-  _startHeader,
   _translation
 ) {
   let currentWord = getNextWord(_words);
@@ -222,7 +220,6 @@ const burgerIcon = document.querySelector(".burger_icon");
 
 // Для words1.2.3.4....html
 const containerMain = document.querySelector(".container_main");
-const startHeader = document.querySelector(".start_header");
 const userAnswer = document.querySelector(".user_answer");
 const input = document.querySelector(".input");
 const button = document.querySelector(".button");
@@ -245,7 +242,6 @@ button.addEventListener("click", () => {
     countAnswers,
     input,
     button,
-    startHeader,
     translation
   );
 });
@@ -258,7 +254,6 @@ input.addEventListener("keydown", function (event) {
       countAnswers,
       input,
       button,
-      startHeader,
       translation
     );
   }
