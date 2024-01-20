@@ -1,9 +1,16 @@
-// words array---------------------------
+// lets, consts----------------------------------------
 let words;
 let correctIndex = 0;
+let correctAnswers = 0;
+let correctAnswersText = "Правильные ответы";
+let inCorrectAnswers = 0;
+let inCorrectAnswersText = "Неправильные ответы";
+let totalWords = 0;
+
+// words array---------------------------
 {
   if (document.title === "Words 01-20") {
-    words = [
+    words = randomWords([
       { original: "References", translation: "Рекомендации" },
       { original: "Bracket", translation: "Скобка" },
       { original: "Change", translation: "Изменять" },
@@ -24,9 +31,9 @@ let correctIndex = 0;
       { original: "Terminate", translation: "Прекратить" },
       { original: "Release", translation: "Выпускать" },
       { original: "Notes", translation: "Примечания" },
-    ];
+    ]);
   } else if (document.title === "Words 20-40") {
-    words = [
+    words = randomWords([
       { original: "Single", translation: "Одинокий" },
       { original: "Title", translation: "Заголовок" },
       { original: "Split", translation: "Расколоть" },
@@ -47,9 +54,9 @@ let correctIndex = 0;
       { original: "Previous", translation: "Предыдущий" },
       { original: "Share", translation: "Делиться" },
       { original: "Find", translation: "Изыскать" },
-    ];
+    ]);
   } else if (document.title === "Words 40-60") {
-    words = [
+    words = randomWords([
       { original: "Back", translation: "Назад" },
       { original: "Forward", translation: "Вперед" },
       { original: "Last", translation: "Последний" },
@@ -70,9 +77,9 @@ let correctIndex = 0;
       { original: "Decrease", translation: "Уменьшить" },
       { original: "Reset", translation: "Перезагрузить" },
       { original: "Justify", translation: "Оправдывать" },
-    ];
+    ]);
   } else if (document.title === "Words 60-80") {
-    words = [
+    words = randomWords([
       { original: "Edit", translation: "Редактировать" },
       { original: "Undo", translation: "Отменить" },
       { original: "Redo", translation: "Переделывать" },
@@ -93,9 +100,9 @@ let correctIndex = 0;
       { original: "Assigned", translation: "Назначенный" },
       { original: "Mentione", translation: "Упомянуть" },
       { original: "Dashboard", translation: "Панель приборов" },
-    ];
+    ]);
   } else if (document.title === "Words 80-100") {
-    words = [
+    words = randomWords([
       { original: "Upgrade", translation: "Обновление" },
       { original: "Matched", translation: "Соответствует" },
       { original: "Visibility", translation: "Видимость" },
@@ -116,9 +123,9 @@ let correctIndex = 0;
       { original: "To eject", translation: "Извлекать" },
       { original: "Restore", translation: "Восстанавливать" },
       { original: "Query", translation: "Запрос" },
-    ];
+    ]);
   } else if (document.title === "Words 100-120") {
-    words = [
+    words = randomWords([
       { original: "Switch", translation: "Выключатель" },
       { original: "Column", translation: "Столбец" },
       { original: "Mode", translation: "Режим" },
@@ -139,7 +146,7 @@ let correctIndex = 0;
       { original: "Storage device", translation: "Накопитель" },
       { original: "Touch screen", translation: "Сенсорный экран" },
       { original: "Allow", translation: "Разрешить" },
-    ];
+    ]);
   }
 }
 
@@ -160,7 +167,7 @@ function translationGenerator(
   _startHeader,
   _translation
 ) {
-  let currentWord = getNextWord(words);
+  let currentWord = getNextWord(_words);
   let userTranslation = _input.value.toLowerCase().trim();
   let correctTranslation = currentWord.translation.toLowerCase().trim();
 
@@ -187,7 +194,7 @@ function translationGenerator(
 
   correctIndex = (correctIndex + 1) % _words.length;
 
-  _userAnswer.textContent = getNextWord(words).original;
+  _userAnswer.textContent = getNextWord(_words).original;
   _countAnswers.innerHTML = `
           <p>${correctAnswersText}: <span class="green_text">${correctAnswers}</span></p>
           <p>${inCorrectAnswersText}: <span class="red_text">${inCorrectAnswers}</span></p>
@@ -199,11 +206,13 @@ function getNextWord(_words) {
   return _words[correctIndex];
 }
 
-// lets, consts----------------------------------------
-let correctAnswers = 0;
-let correctAnswersText = "Правильные ответы";
-let inCorrectAnswers = 0;
-let inCorrectAnswersText = "Неправильные ответы";
+function randomWords(random) {
+  for (let i = random.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [random[i], random[j]] = [random[j], random[i]];
+  }
+  return random;
+}
 
 // Для header.html и woeds.html
 const headerContainer = document.querySelector(".header_container");
