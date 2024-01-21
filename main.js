@@ -14,7 +14,7 @@ let inCorrectAnswersText = "Неправильные ответы";
       { original: "Bracket", translation: "Скобка" },
       { original: "Change", translation: "Изменять" },
       { original: "Debugging", translation: "Отладка" },
-      { original: "Without", translation: "Без" },
+      { original: "Tutorials", translation: "Обучающие программы" },
       { original: "Launch", translation: "Запуск" },
       { original: "Without", translation: "Без" },
       { original: "Step", translation: "Шаг" },
@@ -52,7 +52,7 @@ let inCorrectAnswersText = "Неправильные ответы";
       { original: "Occurrence", translation: "Вхождение" },
       { original: "Previous", translation: "Предыдущий" },
       { original: "Share", translation: "Делиться" },
-      { original: "Find", translation: "Изыскать" },
+      { original: "Privacy", translation: "Конфиденциальность" },
     ]);
   } else if (document.title === "Words 40-60") {
     words = randomWords([
@@ -79,11 +79,11 @@ let inCorrectAnswersText = "Неправильные ответы";
     ]);
   } else if (document.title === "Words 60-80") {
     words = randomWords([
-      { original: "Edit", translation: "Редактировать" },
-      { original: "Undo", translation: "Отменить" },
-      { original: "Redo", translation: "Переделывать" },
-      { original: "Paste", translation: "Вставить" },
-      { original: "Replace", translation: "Заменять" },
+      { original: "Statement", translation: "Заявление" },
+      { original: "Report", translation: "Отчет" },
+      { original: "Join", translation: "Присоединиться" },
+      { original: "Feature", translation: "Особенность" },
+      { original: "Tools", translation: "Инструменты" },
       { original: "Toggle", translation: "Переключать" },
       { original: "Emment", translation: "Наполнять" },
       { original: "Recent", translation: "Недавний" },
