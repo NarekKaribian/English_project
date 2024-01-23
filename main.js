@@ -146,6 +146,29 @@ let inCorrectAnswersText = "Неправильные ответы";
       { original: "Touch screen", translation: "Сенсорный экран" },
       { original: "Allow", translation: "Разрешить" },
     ]);
+  } else if (document.title === "Words 120_140") {
+    words = randomWords([
+      { original: "Autofill", translation: "Автозаполнение" },
+      { original: "Browsing", translation: "просмотр" },
+      { original: "Customize", translation: "Настроить" },
+      { original: "Manage", translation: "Управлять" },
+      { original: "Other", translation: "Другой" },
+      { original: "Guest", translation: "Гость" },
+      { original: "Payment", translation: "Оплата" },
+      { original: "Send", translation: "Отправлять" },
+      { original: "Link", translation: "Связь" },
+      { original: "Performance", translation: "Производительность" },
+      { original: "Turn off", translation: "Выключать" },
+      { original: "Review", translation: "Обзор" },
+      { original: "Data", translation: "Данные" },
+      { original: "Encryption", translation: "Шифрование" },
+      { original: "Signin", translation: "Войти" },
+      { original: "Turning", translation: "Превращение" },
+      { original: "Improve", translation: "Улучшать" },
+      { original: "Usage", translation: "Применение" },
+      { original: "Crash reports", translation: "Отчеты о сбоях" },
+      { original: "Make", translation: "Делать" },
+    ]);
   }
 }
 
