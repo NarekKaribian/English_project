@@ -146,7 +146,7 @@ let inCorrectAnswersText = "Неправильные ответы";
       { original: "Touch screen", translation: "Сенсорный экран" },
       { original: "Allow", translation: "Разрешить" },
     ]);
-  } else if (document.title === "Words 120_140") {
+  } else if (document.title === "Words 120-140") {
     words = randomWords([
       { original: "Autofill", translation: "Автозаполнение" },
       { original: "Browsing", translation: "просмотр" },
