@@ -26,7 +26,7 @@ let inCorrectAnswersText = "Неправильные ответы";
       { original: "itional", translation: "Дополнительный" },
       { original: "Run", translation: "Запустить" },
       { original: "Build", translation: "Сборка" },
-      { original: "Running", translation: "Текущиая" },
+      { original: "Make", translation: "Делать" },
       { original: "Terminate", translation: "Прекратить" },
       { original: "Release", translation: "Выпускать" },
       { original: "Notes", translation: "Примечания" },
@@ -167,7 +167,30 @@ let inCorrectAnswersText = "Неправильные ответы";
       { original: "Improve", translation: "Улучшать" },
       { original: "Usage", translation: "Применение" },
       { original: "Crash reports", translation: "Отчеты о сбоях" },
-      { original: "Make", translation: "Делать" },
+      { original: "Правила", translation: "Rules" },
+    ]);
+  } else if (document.title === "Words 140-160") {
+    words = randomWords([
+      { original: "How many times", translation: "Сколько раз" },
+      { original: "Reference error", translation: "Ошибка данных" },
+      { original: "Score", translation: "Счет" },
+      { original: "Slice", translation: "Часть" },
+      { original: "Duration", translation: "Продолжительность" },
+      { original: "Links", translation: "Ссылки" },
+      { original: "Confirm", translation: "Подтвердить" },
+      { original: "Remaining", translation: "Оставшийся" },
+      { original: "Guess", translation: "Предполагать" },
+      { original: "Congratulate", translation: "Поздравить" },
+      { original: "Fode out", translation: "Исчезать" },
+      { original: "Fode in", translation: "Постепенно усиливаться" },
+      { original: "Slide up", translation: "Скользить вверх" },
+      { original: "Postpone", translation: "Отложить" },
+      { original: "Delay", translation: "Задерживать" },
+      { original: "Targel", translation: "Цель" },
+      { original: "Hint", translation: "Подсказка" },
+      { original: "Set direction", translation: "Задать направление" },
+      { original: "Sample", translation: "Шаблон" },
+      { original: "Equal", translation: "Равняется" },
     ]);
   }
 }
