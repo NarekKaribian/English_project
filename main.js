@@ -167,7 +167,7 @@ let inCorrectAnswersText = "Неправильные ответы";
       { original: "Improve", translation: "Улучшать" },
       { original: "Usage", translation: "Применение" },
       { original: "Crash reports", translation: "Отчеты о сбоях" },
-      { original: "Правила", translation: "Rules" },
+      { original: "Rules", translation: "Правила" },
     ]);
   } else if (document.title === "Words 140-160") {
     words = randomWords([
@@ -191,6 +191,29 @@ let inCorrectAnswersText = "Неправильные ответы";
       { original: "Set direction", translation: "Задать направление" },
       { original: "Sample", translation: "Шаблон" },
       { original: "Equal", translation: "Равняется" },
+    ]);
+  } else if (document.title === "Words 160-180") {
+    words = randomWords([
+      { original: "Introduction", translation: "Введение" },
+      { original: "Most", translation: "Большинство" },
+      { original: "Easy", translation: "Легкий" },
+      { original: "Will teach", translation: "Будет учить" },
+      { original: "Basic", translation: "Базовый" },
+      { original: "Advanced", translation: "Продвинутый" },
+      { original: "Called ", translation: "Называется" },
+      { original: "Exercise", translation: "Упражнение" },
+      { original: "Submit", translation: "Представлять на рассмотрение" },
+      { original: "using", translation: "С использованием" },
+      { original: "Declare", translation: "Объявить" },
+      { original: "Following", translation: "Следующий" },
+      { original: "Again", translation: "Снова" },
+      { original: "Try", translation: "Пытаться" },
+      { original: "Multiply", translation: "Умножить" },
+      { original: "Divide", translation: "Разделять" },
+      { original: "Remainder", translation: "Остаток" },
+      { original: "Being", translation: "Существование" },
+      { original: "Describe", translation: "Описывать" },
+      { original: "Commonly", translation: "Обычно" },
     ]);
   }
 }
