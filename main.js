@@ -215,9 +215,34 @@ let inCorrectAnswersText = "Неправильные ответы";
       { original: "Describe", translation: "Описывать" },
       { original: "Commonly", translation: "Обычно" },
     ]);
+  } else if (document.title === "Words 180-200") {
+    words = randomWords([
+      { original: "Wallpapers", translation: "Обои" },
+      { original: "Lock", translation: "Замок" },
+      { original: "Brightness", translation: "Яркость" },
+      { original: "Notification", translation: "Уведомление" },
+      { original: "Security", translation: "Безопасность" },
+      { original: "Safety", translation: "Безопасность" },
+      { original: "Emergency", translation: "Чрезвычайная ситуация" },
+      { original: "Digital", translation: "Цифровой" },
+      { original: "Wellbeing", translation: "Благополучие" },
+      { original: "Parent", translation: "Родитель" },
+      { original: "Feedback", translation: "Обратная связь" },
+      { original: "Call", translation: "Вызов" },
+      { original: "Access", translation: "Доступ" },
+      { original: "Between", translation: "Между" },
+      { original: "Consumption", translation: "Потребление" },
+      {
+        original: "Carrier-related",
+        translation: "Связанные с оператором связи",
+      },
+      { original: "Dialing", translation: "Набор номера" },
+      { original: "Forwarding", translation: "Пересылка" },
+      { original: "Barring", translation: "Запрет" },
+      { original: "Waitin", translation: "Ожидание" },
+    ]);
   }
 }
-
 // functions------------------------------------
 function burgerClick(_burgerIcon, _burgerNav) {
   _burgerIcon.addEventListener("click", function () {
