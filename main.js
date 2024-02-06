@@ -241,6 +241,29 @@ let inCorrectAnswersText = "Неправильные ответы";
       { original: "Barring", translation: "Запрет" },
       { original: "Waitin", translation: "Ожидание" },
     ]);
+  } else if (document.title === "Words 200-220") {
+    words = randomWords([
+      { original: "Found", translation: "Найденный" },
+      { original: "Tethering", translation: "Модем" },
+      { original: "Give", translation: "Давать" },
+      { original: "Turn", translation: "Повернуть" },
+      { original: "Quick", translation: "Быстрый" },
+      { original: "Discover", translation: "Обнаружить" },
+      { original: "Fingerprint", translation: "Отпечаток пальца" },
+      { original: "Edge ", translation: "Край" },
+      { original: "Lighting", translation: "Осветительные приборы" },
+      { original: "Square", translation: "Квадрат" },
+      { original: "Drawer", translation: "Ящик" },
+      { original: "Swipe ", translation: "Проведите пальцем по экрану" },
+      { original: "Lower part", translation: "Нижняя часть" },
+      { original: "Raise", translation: "Поднимать" },
+      { original: "Prevention of", translation: "Предотвращение" },
+      { original: "Scheduled", translation: "Запланированное" },
+      { original: "Eye", translation: "Глаз" },
+      { original: "Boost", translation: "Способствовать росту" },
+      { original: "Rotate", translation: "Поворот" },
+      { original: "Refresh rate", translation: "Частота обновления" },
+    ]);
   }
 }
 // functions------------------------------------

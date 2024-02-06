@@ -22,7 +22,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #ede5e5;
+  background-color: #9e9e969d;
   background-size: cover;
   z-index: -1;
   opacity: 0.5;
@@ -75,6 +75,15 @@ body::before {
   list-style: none;
   display: flex;
   justify-content: space-between;
+}
+
+.burger_nav_li_green {
+  color: rgb(70, 186, 70);
+  list-style-type: disc;
+}
+.burger_nav_li_red {
+  color: rgb(240, 39, 39);
+  list-style-type: disc;
 }
 
 .burger_nav ul li a {
@@ -240,7 +249,7 @@ button.red {
   border: 1px solid black;
   border-radius: 7px;
   margin: 10px 10px 0 10px;
-  background-color: rgba(107, 102, 96, 0.16);
+  background-color: #ffffff;
   cursor: pointer;
   text-align: center;
 }
@@ -252,11 +261,8 @@ button.red {
 }
 
 .main_box_green {
-  background-color: rgb(70, 186, 70);
-}
-.main_box_yellow {
-  background-color: rgb(213, 213, 18);
+  border: 2px solid rgb(70, 186, 70);
 }
 .main_box_red {
-  background-color: rgb(240, 39, 39);
+  border: 2px solid rgb(240, 39, 39);
 }
