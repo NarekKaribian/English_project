@@ -261,8 +261,31 @@ let inCorrectAnswersText = "Неправильные ответы";
       { original: "Scheduled", translation: "Запланированное" },
       { original: "Eye", translation: "Глаз" },
       { original: "Boost", translation: "Способствовать росту" },
-      { original: "Rotate", translation: "Поворот" },
+      { original: "Rotate", translation: "Вращать" },
       { original: "Refresh rate", translation: "Частота обновления" },
+    ]);
+  } else if (document.title === "Words 220-240") {
+    words = randomWords([
+      { original: "Pull", translation: "Тянуть" },
+      { original: "Hand", translation: "Рука" },
+      { original: "Empty", translation: "Пустой" },
+      { original: "Accidental", translation: "Случайный" },
+      { original: "Thing", translation: "Вещь" },
+      { original: "Space", translation: "Космос" },
+      { original: "Wake", translation: "Будить" },
+      { original: "Touch", translation: "Трогать" },
+      { original: "Occur", translation: "Происходить" },
+      { original: "Adjust", translation: "Регулировать" },
+      { original: "Response", translation: "Ответ" },
+      { original: "Ambient", translation: "Окружающий" },
+      { original: "Increase", translation: "Увеличивать" },
+      { original: "Power", translation: "Мощь" },
+      { original: "Cause", translation: "Причина" },
+      { original: "Heat", translation: "Нагреваться" },
+      { original: "Resolution", translation: "Разрешение" },
+      { original: "High", translation: "Высокий" },
+      { original: "Conserve", translation: "Сохранить" },
+      { original: "Smooth", translation: "Гладкий" },
     ]);
   }
 }
