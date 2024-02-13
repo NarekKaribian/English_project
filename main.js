@@ -287,6 +287,29 @@ let inCorrectAnswersText = "Неправильные ответы";
       { original: "Conserve", translation: "Сохранить" },
       { original: "Smooth", translation: "Гладкий" },
     ]);
+  } else if (document.title === "Words 240-260") {
+    words = randomWords([
+      { original: "Available", translation: "Доступный" },
+      { original: "Best", translation: "Лучший" },
+      { original: "Same", translation: "Такой же" },
+      { original: "Faster", translation: "Быстрее" },
+      { original: "Acceleration", translation: "Ускорение" },
+      { original: "Reduce", translation: "Уменьшать" },
+      { original: "External", translation: "Внешний" },
+      { original: "Wired", translation: "Проводной" },
+      { original: "Earphones", translation: "Наушники" },
+      { original: "Reject", translation: "Отклонять" },
+      { original: "Press", translation: "Нажимать" },
+      { original: "Incoming", translation: "Вход" },
+      { original: "Disabled", translation: "Неполноценный" },
+      { original: "Always", translation: "Всегда" },
+      { original: "Alway", translation: "Запланированный" },
+      { original: "Busy", translation: "Занятый" },
+      { original: "Reachable", translation: "Достижимый" },
+      { original: "Unreachable", translation: "Недоступно" },
+      { original: "Barring", translation: "За исключением" },
+      { original: "Outgoing", translation: "Исходящий" },
+    ]);
   }
 }
 // functions------------------------------------
