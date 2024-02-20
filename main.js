@@ -186,7 +186,7 @@ let inCorrectAnswersText = "Неправильные ответы";
       { original: "Slide up", translation: "Скользить вверх" },
       { original: "Postpone", translation: "Отложить" },
       { original: "Delay", translation: "Задерживать" },
-      { original: "Targel", translation: "Цель" },
+      { original: "Target", translation: "Цель" },
       { original: "Hint", translation: "Подсказка" },
       { original: "Set direction", translation: "Задать направление" },
       { original: "Sample", translation: "Шаблон" },
@@ -309,6 +309,29 @@ let inCorrectAnswersText = "Неправильные ответы";
       { original: "Unreachable", translation: "Недоступно" },
       { original: "Barring", translation: "За исключением" },
       { original: "Outgoing", translation: "Исходящий" },
+    ]);
+  } else if (document.title === "Words 260-280") {
+    words = randomWords([
+      { originai: "Responsibility", translation: "Ответственность" },
+      { originai: "Separation", translation: "Разделение" },
+      { originai: "Concerns", translation: "Обеспокоенность" },
+      { originai: "Reproduce", translation: "Воспроизводить" },
+      { originai: "Represent", translation: "Представлять" },
+      { originai: "Protective", translation: "Защитный" },
+      { originai: "Total", translation: "Общий" },
+      { originai: "Beginner", translation: "Новичок" },
+      { originai: "Goal", translation: "Цель" },
+      { originai: "Agree", translation: "Соглашаться" },
+      { originai: "Article", translation: "Статья" },
+      { originai: "Learning", translation: "Обучение" },
+      { originai: "Jobs", translation: "Вакансии" },
+      { originai: "Spread", translation: "Распространение" },
+      { originai: "Included", translation: "Включено" },
+      { originai: "Look", translation: "Смотреть" },
+      { originai: "Anyone", translation: "Любой" },
+      { originai: "Against", translation: "Против" },
+      { originai: "Proverbial", translation: "Пресловутый" },
+      { originai: "Wall", translation: "Стена" },
     ]);
   }
 }
