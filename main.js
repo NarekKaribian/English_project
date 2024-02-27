@@ -33,26 +33,26 @@ let inCorrectAnswersText = "Неправильные ответы";
     ]);
   } else if (document.title === "Words 20-40") {
     words = randomWords([
-      { original: "Single", translation: "Одинокий" },
-      { original: "Split", translation: "Расколоть" },
-      { original: "Flip", translation: "Подбросить" },
-      { original: "Shortcuts", translation: "Ярлыки" },
-      { original: "Snippets", translation: "Фрагменты" },
-      { original: "Abbreviation", translation: "Сокращенное название" },
-      { original: "Shrink", translation: "Сокращать" },
-      { original: "Move", translation: "Двигаться" },
-      { original: "Previous", translation: "Предыдущий" },
-      { original: "Share", translation: "Делиться" },
-      { original: "Privacy", translation: "Конфиденциальность" },
-      { original: "Disable", translation: "Запрещать" },
-      { original: "Definition", translation: "Определение" },
-      { original: "Make", translation: "Делать" },
-      { original: "itional", translation: "Дополнительный" },
-      { original: "Build", translation: "Сборка" },
-      { original: "Terminate", translation: "Прекратить" },
-      { original: "Release", translation: "Выпускать" },
-      { original: "Notes", translation: "Примечания" },
-      { original: "Statement", translation: "Заявление" },
+      { original: "Autofill", translation: "Автозаполнение" },
+      { original: "Browsing", translation: "просмотр" },
+      { original: "Customize", translation: "Настроить" },
+      { original: "Manage", translation: "Управлять" },
+      { original: "Other", translation: "Другой" },
+      { original: "Guest", translation: "Гость" },
+      { original: "Payment", translation: "Оплата" },
+      { original: "Multiply", translation: "Умножить" },
+      { original: "Link", translation: "Связь" },
+      { original: "Performance", translation: "Производительность" },
+      { original: "Turn off", translation: "Выключать" },
+      { original: "Review", translation: "Обзор" },
+      { original: "Data", translation: "Данные" },
+      { original: "Following", translation: "Следующий" },
+      { original: "Signin", translation: "Войти" },
+      { original: "Divide", translation: "Разделять" },
+      { original: "Improve", translation: "Улучшать" },
+      { original: "Being", translation: "Существование" },
+      { original: "Crash reports", translation: "Отчеты о сбоях" },
+      { original: "Rules", translation: "Правила" },
     ]);
   } else if (document.title === "Words 40-60") {
     words = randomWords([
@@ -148,29 +148,6 @@ let inCorrectAnswersText = "Неправильные ответы";
     ]);
   } else if (document.title === "Words 120-140") {
     words = randomWords([
-      { original: "Autofill", translation: "Автозаполнение" },
-      { original: "Browsing", translation: "просмотр" },
-      { original: "Customize", translation: "Настроить" },
-      { original: "Manage", translation: "Управлять" },
-      { original: "Other", translation: "Другой" },
-      { original: "Guest", translation: "Гость" },
-      { original: "Payment", translation: "Оплата" },
-      { original: "Multiply", translation: "Умножить" },
-      { original: "Link", translation: "Связь" },
-      { original: "Performance", translation: "Производительность" },
-      { original: "Turn off", translation: "Выключать" },
-      { original: "Review", translation: "Обзор" },
-      { original: "Data", translation: "Данные" },
-      { original: "Following", translation: "Следующий" },
-      { original: "Signin", translation: "Войти" },
-      { original: "Divide", translation: "Разделять" },
-      { original: "Improve", translation: "Улучшать" },
-      { original: "Being", translation: "Существование" },
-      { original: "Crash reports", translation: "Отчеты о сбоях" },
-      { original: "Rules", translation: "Правила" },
-    ]);
-  } else if (document.title === "Words 140-160") {
-    words = randomWords([
       { original: "How many times", translation: "Сколько раз" },
       { original: "Reference error", translation: "Ошибка данных" },
       { original: "Score", translation: "Счет" },
@@ -191,6 +168,29 @@ let inCorrectAnswersText = "Неправильные ответы";
       { original: "Sample", translation: "Шаблон" },
       { original: "Equal", translation: "Равняется" },
       { original: "Delay", translation: "Задерживать" },
+    ]);
+  } else if (document.title === "Words 140-160") {
+    words = randomWords([
+      { original: "Single", translation: "Одинокий" },
+      { original: "Split", translation: "Расколоть" },
+      { original: "Flip", translation: "Подбросить" },
+      { original: "Shortcuts", translation: "Ярлыки" },
+      { original: "Snippets", translation: "Фрагменты" },
+      { original: "Abbreviation", translation: "Сокращенное название" },
+      { original: "Shrink", translation: "Сокращать" },
+      { original: "Move", translation: "Двигаться" },
+      { original: "Previous", translation: "Предыдущий" },
+      { original: "Share", translation: "Делиться" },
+      { original: "Privacy", translation: "Конфиденциальность" },
+      { original: "Disable", translation: "Запрещать" },
+      { original: "Definition", translation: "Определение" },
+      { original: "Make", translation: "Делать" },
+      { original: "itional", translation: "Дополнительный" },
+      { original: "Build", translation: "Сборка" },
+      { original: "Terminate", translation: "Прекратить" },
+      { original: "Release", translation: "Выпускать" },
+      { original: "Notes", translation: "Примечания" },
+      { original: "Statement", translation: "Заявление" },
     ]);
   } else if (document.title === "Words 160-180") {
     words = randomWords([
