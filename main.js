@@ -333,6 +333,29 @@ let inCorrectAnswersText = "Неправильные ответы";
       { original: "Wall", translation: "Стена" },
       { original: "Response", translation: "Отклик" },
     ]);
+  } else if (document.title === "Words 280-300") {
+    words = randomWords([
+      { original: "Quiz", translation: "Контрольный опрос" },
+      { original: "Init", translation: "В этом" },
+      { original: "Core", translation: "Основной" },
+      { original: "Within", translation: "В пределах" },
+      { original: "Along with", translation: "Вместе с" },
+      { original: "Modern", translation: "Современный" },
+      { original: "Own", translation: "Собственный" },
+      { original: "Loops", translation: "Петли" },
+      { original: "Health", translation: "Здоровье" },
+      { original: "Must", translation: "Должен" },
+      { original: "Defeat", translation: "Поражение" },
+      { original: "Which", translation: "Который" },
+      { original: "Build", translation: "Строить" },
+      { original: "Curriculum", translation: "Учебный план" },
+      { original: "Will need to", translation: "Нужно будет" },
+      { original: "Knowledge", translation: "Знание" },
+      { original: "Through", translation: "Через" },
+      { original: "Responsive", translation: "Отзывчивый" },
+      { original: "First", translation: "Первый" },
+      { original: "Boilerplate", translation: "Шаблон" },
+    ]);
   }
 }
 // functions------------------------------------

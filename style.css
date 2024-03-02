@@ -77,15 +77,6 @@ body::before {
   justify-content: space-between;
 }
 
-.burger_nav_li_green {
-  color: rgb(70, 186, 70);
-  list-style-type: disc;
-}
-.burger_nav_li_red {
-  color: rgb(240, 39, 39);
-  list-style-type: disc;
-}
-
 .burger_nav ul li a {
   text-decoration: none;
   color: #ffffff;
