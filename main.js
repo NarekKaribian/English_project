@@ -356,6 +356,29 @@ let inCorrectAnswersText = "Неправильные ответы";
       { original: "First", translation: "Первый" },
       { original: "Boilerplate", translation: "Шаблон" },
     ]);
+  } else if (document.title === "Words 300-320") {
+    words = randomWords([
+      { original: "Should", translation: "Должен" },
+      { original: "Writing", translation: "Письмо" },
+      { original: "Begin", translation: "Начинать" },
+      { original: "Into", translation: "В" },
+      { original: "Passes", translation: "Проходит" },
+      { original: "Depending", translation: "В зависимости" },
+      { original: "Might", translation: "Мощь" },
+      { original: "Preview", translation: "Предварительный просмотр" },
+      { original: "Built-in", translation: "Встроенный" },
+      { original: "Helpful", translation: "Полезный" },
+      { original: "Note", translation: "Примечание" },
+      { original: "Semicolon", translation: "Точка с запятой" },
+      { original: "Everything", translation: "Все" },
+      { original: "Coming up", translation: "Скоро" },
+      { original: "Before you start", translation: "Прежде чем ты начнешь" },
+      { original: "Keep", translation: "Держать" },
+      { original: "Then", translation: "Затем" },
+      { original: "Has been", translation: "Был" },
+      { original: "Remember", translation: "Помнить" },
+      { original: "Hold a value", translation: "Удерживайте значение" },
+    ]);
   }
 }
 // functions------------------------------------
