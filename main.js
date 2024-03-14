@@ -1,12 +1,4 @@
-// lets, consts----------------------------------------
 let words;
-let correctIndex = 0;
-let correctAnswers = 0;
-let correctAnswersText = "Правильные ответы";
-let inCorrectAnswers = 0;
-let inCorrectAnswersText = "Неправильные ответы";
-
-// words array---------------------------
 {
   if (document.title === "Words 01-20") {
     words = randomWords([
@@ -425,58 +417,46 @@ let inCorrectAnswersText = "Неправильные ответы";
   // {original: "", translation: ""},
 }
 // functions------------------------------------
-function burgerClick(_burgerIcon, _burgerNav) {
-  _burgerIcon.addEventListener("click", function () {
-    this.classList.toggle("active");
-    _burgerNav.classList.toggle("open");
-  });
-}
+(function burgerClick() {
+  const burgerNav = document.querySelector(".burger_nav");
+  const burgerIcon = document.querySelector(".burger_icon");
 
-function translationGenerator(
-  _words,
-  _userAnswer,
-  _countAnswers,
-  _input,
-  _button,
-  _translation
-) {
-  let currentWord = getNextWord(_words);
+  burgerIcon.addEventListener("click", function () {
+    this.classList.toggle("active");
+    burgerNav.classList.toggle("open");
+  });
+})();
+
+function translationGenerator(_words, _userAnswer, _countAnswers, _input) {
+  let currentWord = getNextWord();
   let userTranslation = _input.value.toLowerCase().trim();
   let correctTranslation = currentWord.translation.toLowerCase().trim();
 
-  if (_input.value.trim() === "") {
-    _userAnswer.classList.add("red_text");
-    setTimeout(() => {
-      _userAnswer.classList.remove("red_text");
-    }, 600);
-    return;
-  }
-
   if (userTranslation === correctTranslation) {
-    _translation.innerHTML = `${currentWord.original} - <span class="green_text"> ${currentWord.translation} </span>`;
+    renderCorrectText(currentWord);
     correctAnswers++;
-    _button.classList.add("green");
   } else {
-    _translation.innerHTML = `${currentWord.original} - <span class="red_text">${currentWord.translation}</span>`;
     inCorrectAnswers++;
-    _button.classList.add("red");
+    renderIncorrectText(currentWord);
   }
-  setTimeout(() => {
-    _button.classList.remove("green", "red");
-  }, 400);
 
   correctIndex = (correctIndex + 1) % _words.length;
 
-  _userAnswer.textContent = getNextWord(_words).original;
-  _countAnswers.innerHTML = `
-          <p>${correctAnswersText}: <span class="green_text">${correctAnswers}</span></p>
-          <p>${inCorrectAnswersText}: <span class="red_text">${inCorrectAnswers}</span></p>
-        `;
+  renderTextAnswer(_userAnswer, _countAnswers);
+
   _input.value = "";
 }
 
-function getNextWord(_words) {
-  return _words[correctIndex];
+function getNextWord() {
+  return words[correctIndex];
+}
+
+function renderCorrectText(currentWord) {
+  translation.innerHTML = `${currentWord.original} - <span class="green_text"> ${currentWord.translation} </span>`;
+}
+
+function renderIncorrectText(currentWord) {
+  translation.innerHTML = `${currentWord.original} - <span class="red_text">${currentWord.translation}</span>`;
 }
 
 function randomWords(random) {
@@ -487,49 +467,36 @@ function randomWords(random) {
   return random;
 }
 
-// Для header.html и woeds.html
-const headerContainer = document.querySelector(".header_container");
-const headerLogo = document.querySelector(".header_logo");
-const burgerNav = document.querySelector(".burger_nav");
-const burgerIcon = document.querySelector(".burger_icon");
+function renderTextAnswer(nextWord, countUserAnswers) {
+  nextWord.textContent = getNextWord().original;
+  countUserAnswers.innerHTML = `
+          <p>${correctAnswersText}: <span class="green_text">${correctAnswers}</span></p>
+          <p>${inCorrectAnswersText}: <span class="red_text">${inCorrectAnswers}</span></p>
+        `;
+}
 
-// Для words1.2.3.4....html
-const containerMain = document.querySelector(".container_main");
+let correctIndex = 0;
+let correctAnswers = 0;
+let correctAnswersText = "Правильные ответы";
+let inCorrectAnswers = 0;
+let inCorrectAnswersText = "Неправильные ответы";
+
 const userAnswer = document.querySelector(".user_answer");
 const input = document.querySelector(".input");
-const button = document.querySelector(".button");
 const translation = document.querySelector(".translation");
 const countAnswers = document.querySelector(".count_answers");
 
-burgerClick(burgerIcon, burgerNav);
-
-countAnswers.innerHTML = `
-<p>${correctAnswersText}: <span class="green_text">${correctAnswers}</span></p>
-<p>${inCorrectAnswersText}: <span class="red_text">${inCorrectAnswers}</span></p>
-`;
-userAnswer.textContent = getNextWord(words).original;
-
-// button, Enter-------------------------------------------
-button.addEventListener("click", () => {
-  translationGenerator(
-    words,
-    userAnswer,
-    countAnswers,
-    input,
-    button,
-    translation
-  );
-});
+renderTextAnswer(userAnswer, countAnswers);
 
 input.addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
-    translationGenerator(
-      words,
-      userAnswer,
-      countAnswers,
-      input,
-      button,
-      translation
-    );
+    if (input.value.trim() === "") {
+      userAnswer.classList.add("red_text");
+      setTimeout(() => {
+        userAnswer.classList.remove("red_text");
+      }, 600);
+      return;
+    }
+    translationGenerator(words, userAnswer, countAnswers, input);
   }
 });
