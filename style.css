@@ -175,6 +175,7 @@ body::before {
   height: auto;
   position: relative;
   z-index: 1;
+  padding-top: 20px;
 }
 
 .user_answer {
