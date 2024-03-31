@@ -417,6 +417,29 @@ let words;
       { original: "Driven", translation: "управляемый" },
       { original: "Library", translation: "Библиотека" },
     ]);
+  } else if (document.title === "Words 360-380") {
+    words = randomWords([
+      { original: "Credentialless", translation: "Без учетных данных" },
+      { original: "Property", translation: "Свойство" },
+      { original: "Queue", translation: "Очередь" },
+      { original: "Frame", translation: "Рамка" },
+      { original: "Blur", translation: "Размытие" },
+      { original: "Caches", translation: "Тайники" },
+      { original: "Capture", translation: "Захватывать" },
+      { original: "Event", translation: "Событие" },
+      { original: "Tick", translation: "Галочка" },
+      { original: "Aid", translation: "Помогать" },
+      { original: "Bit", translation: "Немного" },
+      { original: "Credential", translation: "Учетные данные" },
+      { original: "Cross", translation: "Пересекать" },
+      { original: "Custom elements", translation: "Пользовательские элементы" },
+      { original: "Ratio", translation: "Соотношение" },
+      { original: "Fetch", translation: "Привести" },
+      { original: "Such", translation: "Такой" },
+      { original: "Runtime", translation: "Время выполнения" },
+      { original: "Some", translation: "Некоторый" },
+      { original: "Express", translation: "Выражать" },
+    ]);
   }
 }
 // functions------------------------------------
